@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0; 
+  }
+
+  body {
+    background-color:teal;
+    font-family: 'chivo mono', monospace;
+    overflow-y: scroll;
+    overflow: hidden;
+  }
+
+  .head {
+    color: aliceblue;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+
+  th {
+    font-size: 10px;
+  }
+  
+  .nav {
+    display:flex;
+    justify-content: space-between;
+    width: 10%;
+    position: fixed;
+    padding: 10%;
+    background-color: aliceblue;
+  }
+
+
+  .nav-links {
+      color: #ffffff;
+      flex: 1;
+      text-align: right;
+      background-color: aliceblue;
+    
+  }
+  
+  .nav-links ul li {
+      list-style: none;
+      display:inline-flex;
+      position: relative;
+      padding: 1px 1% ;
+      border: solid 5px teal;   
+
+  }
+  
+  .nav-links ul li a {
+      color: teal;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'chivo mono', monospace;
+      flex: 1;
+     
+  }
+  
+  .nav-links ul li a::after {
+      content: '';
+      width: 0%;
+      height: 6px;
+      background: teal;
+      display: block;
+      margin:auto;
+      transition: 0.5s;
+  
+  }
+
+
+
+.projects {
+    color: black;
+    
+    
+}
+
+.projects ul {
+    display: flex;
+    padding: 5%;
+
+
+    
+    
+}
+
+.projects ul li {
+    position: relative;
+    text-align: right;
+    width: 40%;
+    z-index: 1;
+    
+    
+    
+
+}
+
+.projects li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 600px;
+   
+    
+
+}
+
+.projects a {
+    color: aliceblue;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    border-left: 5px;
+    border-bottom: 0px;
+    border-top: 5px;
+    border-right: 0px;
+    border-style:solid;
+    border-color: aliceblue;
+    border-radius: 10px;
+    position: relative;
+    text-decoration: none;
+    transition: all 1s ease;
+    
+
+}
+
+.projects a:hover{
+    border-right: 5px;
+    border-bottom: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: aliceblue;
+    align-items: left;
+}
+
+p {
+    text-align: right;
+    position: absolute;
+    padding: 1%;
+    color: aliceblue;
+    transition-delay: 1s;
+    transition: all 1s ease;
+    opacity: 0;
+    transform: skew(0deg);
+}
+
+.images {
+    position: relative;
+    }
+
+.image-container{
+    
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    padding: 5px;
+    opacity: 0;
+    margin: 1px;
+    border-top-left-radius: 30px;
+    transition: all 01s ease;
+        
+       
+}
+
+.border{
+    
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    opacity: 0.7;
+    padding: 5px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: aliceblue;
+    background-color: teal;
+    
+        
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-active{
+   opacity: 1;
+}
+
+
+.para-active{
+    display:flex;
+    opacity: 1;
+    transform: skew(180deg);
+ }
+  
+
+.grid {
+    
+    width: 90%;
+    padding: 5%;
+    
+}
+.grid img{
+    
+    width: 300px;
+    height: 500px;
+    
+}
+
+button {
+    padding: 3px;
+    color: aliceblue;
+    border-radius: 10px;
+    font-style: none;
+    position: fixed;
+    bottom: 5%;
+    left: calc(50% - 40px);
+    z-index: 2;
+    
+}
+button a{
+    text-decoration: none;
+    color: teal;
+    font-size: 20px;
+
+}
+
+.bagtype {
+    color: black;
+    width: 100%;
+    
+}
+
+.bagtype ul {
+    display: flex;
+    padding: 5%;
+    margin-left: 60%;
+
+    
+    
+}
+
+.bagtype ul li {
+    position: relative;
+    text-align: left;
+    width: 50%;
+    z-index: 1;
+    
+    
+    
+
+}
+
+.bagtype li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 500px;
+    
+    
+
+}
+
+.bagtype a {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    transition: all 1s ease;
+    transform: skew(0deg, 10deg) rotateY(20deg);
+    opacity: 0.3;
+}
+
+.bagtype a:hover {
+    transform: skew(0deg, 0deg) rotateY(0deg);
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    
+
+
+    .body {
+        overflow-x:hidden;
+        overflow-y:hidden;
+
+    }
+    .projects a {
+        color: aliceblue;
+        font-size: 15px;
+        font-weight: 500;
+        border-left: 2px;
+        border-bottom: 0px;
+        border-top: 2px;
+        border-right: 0px;
+        border-style:solid;
+        border-color: aliceblue;
+        border-radius: 3px;
+        position: relative;
+        
+        
+    
+    }
+
+   
+}

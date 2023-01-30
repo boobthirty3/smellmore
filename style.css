@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body {
+    background-color:teal;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    font-family: 'chivo mono', monospace;
+    
+}
+
+.head {
+    color: aliceblue;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 20px;
+  }
+
+
+th {
+    font-size: 10px;
+}
+  
+.nav {
+    width: 10%;
+    position: fixed;
+    background-color: aliceblue;
+    justify-content: space-between;
+}
+
+
+.nav-links {
+      color: #ffffff;
+      text-align: right;
+      background-color: aliceblue;
+    
+}
+  
+.nav-links ul li {
+      list-style: none;
+      display:inline-flex;
+      position: relative;
+      padding: 1px 1% ;
+      border: solid 5px teal;   
+
+}
+  
+.nav-links a {
+      color: teal;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'chivo mono', monospace;
+      flex: 1;
+     
+}
+  
+.nav-links ul li a::after {
+      content: '';
+      width: 0%;
+      height: 6px;
+      background: teal;
+      display: block;
+      margin:auto;
+      transition: 0.5s;
+  
+}
+  
+.nav-links ul li a:hover::after{
+      width: 100%;
+  
+}
+
+
+
+.smellmore {
+    width: 3%;
+    position: inherit;
+    cursor: wait;
+    padding: 20px;
+    margin-left: 30%;
+    margin-top: 10%;
+    color: aliceblue;
+}
+
+.smellmore2{
+    position: relative;
+    color: aliceblue;
+}
+.wagd {
+    position: absolute;
+    color: whitesmoke;
+    transition: all 3s ease;
+    padding: 20%;
+    opacity: 0;
+    scale: 200%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    scale: 400%;
+}
+.wagd a{
+    position: absolute;
+    color: whitesmoke;
+}
+
+.what {
+    transition-delay: 2s;
+}
+.a {
+    transition-delay: 3s;
+}
+.great {
+    transition-delay: 4s;
+}
+.day {
+    transition-delay: 5s;
+}
+.toggle .wagd{
+    opacity: 1;
+}
+
+.lines {
+    display: block;
+    padding: 2px;
+    width: 5%;
+    
+}
+
+
+.lines div{
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+    transition: 4s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.toggle .line1 {
+    transform: rotate(-35deg) translate(-5px, 5px);
+    border-radius: 100px;
+    
+}
+
+.toggle .line2 {
+    transform: translate(0px, 3px);
+}
+
+.toggle .line3 {
+    transform: rotate(-405deg) translate(1px, 6px);
+}
+
+.toggle .line4 {
+    transform: rotate(-90deg) translate(-10px, -6px);
+}
+
+.toggle .line5 {
+    transform: rotate(405deg) translate(0px, 0px);
+}
+
+.toggle .line6 {
+    transform: rotate(-45deg) translate(12px, 6px);
+}
+
+.toggle .line7 {
+    transform: rotate(90deg) translate(-15px, -20px);
+}
+
+.toggle .line8 {
+    transform: rotate(0deg) translate(0px, 0px);
+}
+.toggle .line9 {
+    transform: rotate(0deg) translate(0px, 0px);
+}
+.toggle .line10 {
+    transform: rotate(0deg) translate(0px, 10px);
+}
+.toggle .line11 {
+    transform: rotate(90deg) translate(-10px, 10px);
+}
+.toggle .line12 {
+    transform: rotate(100deg) translate(15px, 10px);
+}
+.toggle .line13 {
+    transform: rotate(840deg) translate(30px, -10px);
+}
+
+
+.line14 {
+    transition: width 10s ease;
+}
+.line14 img {
+    opacity: 0%;
+    width: 300px;
+    height: 300px;
+    transition: opacity 2s ease;
+    transition-delay: 1.5s;
+    border: solid aliceblue 2px;
+    scale: 0%;
+}
+
+.line14 a {
+    color: aliceblue;
+    font-size: 7px;
+    transition: all 2s ease;
+    
+}
+
+
+.toggle .line14 {
+    transform: rotate(-90deg) translate(-50px, -100px);
+    width: 300px; 
+}
+.toggle .line14 a{
+    font-size: 20px;
+    transform: rotate(-90deg);
+}
+
+.toggle .line14 img {
+    scale: 100%;
+    transform: translate(0px, 0px) rotate(90deg);
+    opacity: 100%;
+}
+.toggle .bottoml {
+    transform: rotate(0deg) translate(0px, 0px);
+}
+.toggle .line15 {
+    transform: rotate(0deg) translate(10px, 0px);
+}
+.toggle .line16 {
+    transform: rotate(0deg) translate(0px, 20px);
+}
+.toggle .line17 {
+    transform: rotate(90deg) translate(30px, 10px);
+}
+.toggle .line18 {
+    transform: rotate(90deg) translate(20px, -20px);
+}
+.toggle .line19 {
+    transform: rotate(1125deg) translate(5px, 10px);
+}
+
+.toggle .line20 {
+    transform: rotate(-45deg) translate(10px, 10px);
+}
+
+.toggle .line21 {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    transform: translate(5px, 132px);
+}
+.toggle .line22 {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    transform: translate(5px, 10px);
+}
+.toggle .line23 {
+    transform: translate(6px, 97px) rotate(-55deg);
+    height: 4px;
+}
+.toggle .line31 {
+    transform:  translate(-7px, 30px) rotate(55deg);
+    height: 5px;
+}
+.toggle .line32 {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    transform: translate(12px, 7px);
+}
+.toggle .line33 {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    transform: translate(-3px, -13px);
+}
+
+.toggle .line24 {
+    transform: rotate(0deg) translate(0px, 10px);
+}
+.toggle .line25 {
+    transform: rotate(-45deg) translate(-5px, 10px);
+}
+.toggle .line26 {
+    transform: rotate(90deg) translate(5px, 5px);
+}
+.toggle .line27 {
+    transform: rotate(0deg) translate(10px, 0px);
+}
+.toggle .line28 {
+    transform: rotate(0deg) translate(0px, 10px);
+}
+.toggle .line29 {
+    transform: rotate(0deg) translate(0px, 12px);
+}
+.toggle .line30 {
+    transform: rotate(2160deg) translate(0px, 14px);
+}
+
+.contact {
+   
+    position: relative;
+    left: 20%;
+    height: 500px;
+    
+}
+
+.contact li {
+    
+    list-style: none;
+    padding: 5%; 
+}
+
+.contact li a{
+    display:flex;
+    flex: 1;
+    padding:5px 5px;
+    font-size: larger;
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+.credit {
+    padding-left: 20px;
+}
+
+textarea {
+    color: teal;
+    background-color: aliceblue;
+    padding: 1px;
+    width: 30%;
+}
+textarea a{
+    text-align: left;
+}
+
+button {
+    padding: 3px;
+    color: aliceblue;
+    border-radius: 10px;
+    font-style: none;
+    z-index: 2;
+    
+}
+button a{
+    text-decoration: none;
+    color: teal;
+    font-size: 20px;
+
+}
+
+.team { 
+    padding: 5%;
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    
+    
+}
+
+.james {
+    padding: 5px;
+    background-color: aliceblue;
+    margin: 5px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.james p{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.james h1{
+    padding: 5px;
+    text-align: center;
+}
+
+
+.socials{
+    text-align: center;
+    background-color:teal;
+    opacity: 1;
+    width: 150px;
+    border-radius: 10px;
+    position: absolute; 
+    margin-left: calc(50% - 75px);
+    bottom: 5px;
+    
+}
+.socials:hover {
+    opacity: 0.5;
+}
+.socials ul li {
+    list-style: none;
+    display: inline-flex;
+    text-decoration: none;
+    
+    
+}
+.socials ul li a {
+    text-decoration: none;
+}
+
+  
+  
+
+.images {
+    position: absolute;
+
+}
+
+
+.image-container{
+    
+    height: 338px;
+    width: 390px;
+    position: relative;
+    padding: 4px;
+    border-radius: 20px;
+    
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+        
+}
+
+.bottom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.bottom:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+  
+
+.fade::after{
+    content: '';
+    background: black;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0%;
+    transition: opacity 3s ease;
+    
+}
+    
+.fade:hover::after{
+    opacity: 0.8;
+}
+
+.nose img{
+    transform: rotate(90deg);
+}
+
+.nose:hover {
+    transform: rotate(90deg) skewX() translate(10px, 10000px);
+    background-color: aqua;
+}
+
+@media (max-width: 1000px) {
+    
+    .body {
+        overflow-x:hidden;
+    overflow-y:hidden;
+    }
+    .smellmore {
+        margin-left: 5%;
+    }
+    .wagd {
+        scale: 200%;
+        margin-left:50px;
+    }
+}
