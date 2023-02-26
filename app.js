@@ -1,18 +1,13 @@
-const smellmoreMove = () => {
-    const smellmore = document.querySelector('.smellmore');
-    
-    smellmore.addEventListener('mouseenter',() => {
+const enter = () => {
+    const button = document.querySelector('.button');
+    const cover = document.querySelector('.cover')
+    button.addEventListener('click',() => {
         
-        smellmore.classList.toggle('toggle');
-
+        cover.classList.toggle('toggle');
+  
     });
     
-    smellmore.addEventListener('mouseleave',() => {
-        
-        smellmore.classList.toggle('toggle');
-    
-    });
+  
+  }
 
-}
-
-smellmoreMove();
+  enter ();
