@@ -251,7 +251,7 @@ button a{
 
 .bagtype ul li {
     position: relative;
-    text-align: left;
+    text-align: right;
     width: 50%;
     z-index: 1;
     
