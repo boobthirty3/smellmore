@@ -7,7 +7,7 @@
     background-color:teal;
     font-family: 'chivo mono', monospace;
     overflow-y: scroll;
-    overflow: hidden;
+    
   }
 
   .head {
@@ -212,7 +212,7 @@ p {
 .grid img{
     
     width: 300px;
-    height: 500px;
+    height: 400px;
     
 }
 
@@ -251,7 +251,7 @@ button a{
 
 .bagtype ul li {
     position: relative;
-    text-align: right;
+    text-align: left;
     width: 50%;
     z-index: 1;
     
